@@ -8,8 +8,8 @@ addons:
   postgresql: "9.5"
 
 before_script:
-  - psql -c "create database squiron;" -U postgres // your database name
-  - sudo -u postgres psql -c "ALTER ROLE postgres WITH password '230877'" // if your password is different from 'postgres` use that one here
+  - psql -c "create database squiron;" -U postgres
+  - sudo -u postgres psql -c "ALTER ROLE postgres WITH password '230877'"
 
 services:
   - postgresql
