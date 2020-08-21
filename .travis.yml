@@ -2,3 +2,14 @@ dist: trusty
 language: java
 jdk:
   - oraclejdk8
+
+sudo: enabled
+addons:
+  postgresql: "9.5"
+
+before_script:
+  - psql -c "create database squiron;" -U postgres // your database name
+  - sudo -u postgres psql -c "ALTER ROLE postgres WITH password '230877'" // if your password is different from 'postgres` use that one here
+
+services:
+  - postgresql
