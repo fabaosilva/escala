@@ -185,8 +185,9 @@ public class EventsTests {
 		}
 		
 	}
-	
-	@Test
+	/*
+	 * 
+	 @Test
 	public void monthtlyEventToMonthAgustThursday() {
 		
 		ScaleBS scaleBS = new ScaleBS();
@@ -244,7 +245,7 @@ public class EventsTests {
 		}
 		
 	}
-	
+	*/
 	
 	
 }
